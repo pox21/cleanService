@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean For All</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/fslightbox.js" defer></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="header header--main">
+      <div class="container">
+        <nav class="header__nav header__nav--margin nav">
+          <div class="nav__logo">
+            <a href="index.html" class="logo">
+              <img src="img/logo.png" alt="" width="206">
+            </a>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a
+                href="#furniture"
+                class="nav-list__link nav-list__link--dropdown"
+                >Cleaning Services</a
+              >
+              <div class="nav-list__sub-nav">
+                <ul class="sub-nav">
+                  <li class="sub-nav__item">
+                    <a href="upholstery.html" class="sub-nav__link">Upholstery</a>
+                  </li>
+                  <li class="sub-nav__item">
+                    <a href="carpet.html" class="sub-nav__link">Carpet</a>
+                  </li>
+                  <li class="sub-nav__item">
+                    <a href="mattress.html" class="sub-nav__link">Mattress</a>
+                  </li>
+                  <li class="sub-nav__item">
+                    <a href="commercial.html" class="sub-nav__link">Commercial</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-list__item">
+              <a href="faq.html" class="nav-list__link">FAQ</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="about.html" class="nav-list__link">About Us</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#contacts" class="nav-list__link">Contact</a>
+            </li>
+          </ul>
+          <button id="open-mobile-nav-btn" class="nav__btn">
+            <img src="./img/icons/mobile-nav.svg" alt="Open navigation">
+          </button>
+        </nav>
+
+        <div class="header__content">
+          <h1 class="header__title">
+            Quality is not a coincidence
+          </h1>
+          <p>
+            At CleanForAll, we bring you more than just a cleaning service; we offer a rejuvenating experience for your home.
+          </p>
+
+          <ul class="header__contacts-list">
+            <li class="header__contacts-item">
+              <a class="header__contacts-link" href="https://wa.me/+491741777787" target="_blank">
+                <img src="img/socials/whatsapp.svg" alt="">
+              Write me on WhatsApp
+              </a>
+            </li>
+            <li class="header__contacts-item">
+              <a class="header__contacts-link" href="tel:+491741777787" target="_blank">
+                <img src="img/socials/phone.svg" alt="">
+                Call me
+              </a>
+            </li>
+            <li class="header__contacts-item">
+              <a class="header__contacts-link" href="https://www.facebook.com/cleanforall5" target="_blank">
+                <img src="img/socials/fb.svg" alt="">
+              Write me on Facebook
+              </a>
+            </li>
+            <li class="header__contacts-item">
+              <a class="header__contacts-link" href="https://www.instagram.com/cleanforall?igsh=OWlzOTY0NjB4aXlz&utm_source=qr" target="_blank">
+                <img src="img/socials/instagram.svg" alt="">
+              Write me on Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="benefits">
+        <div class="container">
+          <div class="benefits__grid">
+            <div class="benefits__title">
+              <h2 class="section-title">Why choose professional cleaning?</h2>
+            </div>
+
+            <div class="benefit">
+              <h3 class="benefit__title">Stain and Dirt Removal:</h3>
+              <p class="benefit__text">
+                Cleaning effectively eliminates dust, dirt, stains, and other contaminants that accumulate on the surfaces of furniture and carpets over time.
+              </p>
+            </div>
+
+            <div class="benefit">
+              <h3 class="benefit__title">Improved Air Quality:</h3>
+              <p class="benefit__text">
+                Regular cleaning helps eliminate allergens, bacteria, and dust, improving the indoor air quality and creating a healthier environment.
+              </p>
+            </div>
+
+            <div class="benefit">
+              <h3 class="benefit__title">Extended Lifespan:</h3>
+              <p class="benefit__text">
+                Cleaning helps preserve materials, preventing wear and preserving colors and patterns for a longer duration.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="container">
+          <div class="products__title">
+            <h2 class="section-title">Range of Our Services</h2>
+          </div>
+
+          <div class="products__tabs none">
+            <div class="tab-controls">
+              <button
+                data-tab="all"
+                class="tab-controls__btn tab-controls__btn--active"
+              >
+                All
+              </button>
+              <button data-tab="chair" class="tab-controls__btn">Chair</button>
+              <button data-tab="bed" class="tab-controls__btn">Beds</button>
+              <button data-tab="sofa" class="tab-controls__btn">Sofa</button>
+              <button data-tab="lamp" class="tab-controls__btn">Lamp</button>
+            </div>
+          </div>
+
+          <div class="products__slider">
+            <!-- //slider -->
+            <div class="slider">
+              <!-- Slider main container -->
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <article data-tab-value="chair" class="card swiper-slide">
+                    <div class="card__photo">
+                      <img
+                        src="./img/icons/sofa.svg"
+                        alt="sofa"
+                        class="card__img"
+                     >
+                    </div>
+                    <div class="card__desc">
+                      <span class="card__category"></span>
+                      <h3 class="card__title">Sofa</h3>
+                      <div class="card__footer">
+                        <div class="card__price" data-value="">from £30</div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article data-tab-value="bed" class="card swiper-slide">
+                    <div class="card__photo">
+                      <img
+                        src="./img/icons/carpet.svg"
+                        alt="Title"
+                        class="card__img"
+                     >
+                    </div>
+                    <div class="card__desc">
+                      <span class="card__category"></span>
+                      <h3 class="card__title">Carpet</h3>
+                      <div class="card__footer">
+                        <div class="card__price" data-value="">On request from 15£ s.m.</div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article data-tab-value="" class="card swiper-slide">
+                    <div class="card__photo">
+                      <img
+                        src="./img/icons/mattress.svg"
+                        alt="Title"
+                        class="card__img"
+                     >
+                    </div>
+                    <div class="card__desc">
+                      <span class="card__category"></span>
+                      <h3 class="card__title">Mattress</h3>
+                      <div class="card__footer">
+                        <div class="card__price" data-value="">from 60£</div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article data-tab-value="chair" class="card swiper-slide">
+                    <div class="card__photo">
+                      <img
+                        src="./img/icons/business.svg"
+                        alt="business"
+                        class="card__img"
+                     >
+                    </div>
+                    <div class="card__desc">
+                      <span class="card__category"></span>
+                      <h3 class="card__title">Commercial Proposal</h3>
+                      <div class="card__footer">
+                        <div class="card__price" data-value="">On request</div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <!-- <article data-tab-value="sofa" class="card swiper-slide">
+                    <a href="#product-page" class="card__link"></a>
+                    <div class="card__photo">
+                      <img
+                        src="./img/products/chair-04.png"
+                        srcset="./img/products/chair-04@2x.png 2x"
+                        alt="Title"
+                        class="card__img"
+                     >
+                    </div>
+
+                    <div class="card__desc">
+                      <a href="#category" class="card__category">Sofa</a>
+                      <h3 class="card__title">Nyantuy Chair</h3>
+
+                      <div class="card__rating">
+                        <img src="./img/icons/star.svg" alt="">
+                        <img src="./img/icons/star.svg" alt="">
+                        <img src="./img/icons/star.svg" alt="">
+                        <img src="./img/icons/star.svg" alt="">
+                        <img src="./img/icons/star-off.svg" alt="">
+                      </div>
+
+                      <div class="card__footer">
+                        <div class="card__price" data-value="$">921</div>
+                        <button class="card__btn">
+                          Add to cart
+                          <img src="./img/icons/plus.svg" alt="Add to cart">
+                        </button>
+                      </div>
+                    </div>
+                  </article> -->
+
+                  
+                </div>
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <button id="sliderPrev" class="slider__btn slider__btn--prev">
+                <img src="./img/icons/slider/slider-left.svg" alt="Previous">
+              </button>
+
+              <button id="sliderNext" class="slider__btn slider__btn--next">
+                <img src="./img/icons/slider/slider-right.svg" alt="Next">
+              </button>
+            </div>
+            <!-- //slider -->
+          </div>
+          <!-- //products__slider -->
+        </div>
+      </section>
+
+      <section class="experiences section">
+        <div class="container section__container">
+          <div class="section__img-wrapper">
+            <img
+              src="img/123.jpg"
+              alt="experiences"
+              class="section__img"
+           >
+          </div>
+          <div class="section__text">
+            <span class="section__pre-title">REVITALIZE YOUR HOME</span>
+            <h2 class="section-title">The Transformative Power of Professional Carpet and Upholstery Cleaning!</h2>
+            <p class="section__descr">
+              At CleanForAll, we bring you more than just a dry cleaning service; we offer a rejuvenating experience for your home. Imagine stepping into your home and being greeted by not just the familiar comfort of your furniture, but also by the pristine freshness that only a professional dry cleaning can provide. Carpets and upholstery are more than just decorative elements; they are the soul of your living spaces, holding memories, laughter, and the essence of your family's daily life.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="materials section">
+        <div class="container section__container">
+          <div class="section__text">
+            <span class="section__pre-title">Stages of cleaning</span>
+            <h2 class="section-title">
+               The furniture cleaning process consists of five stages:
+            </h2>
+            <ul>
+              <li>
+                *   Dry cleaning with a vacuum cleaner.
+              </li>
+              <li>
+                *   Stain removal.
+              </li>
+              <li>
+                *   Application of professional chemicals.
+              </li>
+              <li>
+                *   Furniture cleaning with a professional extractor.
+              </li>
+              <li>
+                *   Furniture cleaning with a conditioner-rinse.
+              </li>
+            </ul>
+            <p class="section__descr">
+            The sofa typically dries within 6-10 hours at room temperature, but as a complimentary service to all our clients, we offer express drying, ensuring your sofa dries rapidly
+            </p>
+          </div>
+          <div class="video">
+            <a class="video__link" data-fslightbox="gallery"
+              href="resources/video.mp4">
+              <button class="video__play-btn">
+                <img class="video__play-icon" src="img/icons/play.svg" alt="play">
+              </button>
+              <img src="img/1234.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="section">
+        <div class="container">
+          <div class="text-center section__title-wrapper">
+            <span class="section__pre-title">Testimonials</span>
+            <h2 class="section-title">Our Client Reviews</h2>
+          </div>
+
+          <div class="clients-slider">
+            <ul class="clients-slider__list swiper-wrapper">
+              <li class="clients-slider__item swiper-slide">
+                <article class="clients-card" 
+                  style="background-image: url('img/clients-slider/clients-card-img-1.jpg')"
+                >
+                  <div class="clients-card__text-wrapper">
+                    <div class="clients-card__avatar-wrapper">
+                      <img src="img/clients-slider/clients-avatar-1.jpg" alt="Bang Upin" class="clients-card__avatar">
+                    </div>
+                    <h3 class="clients-card__title">
+                      Bang Upin
+                    </h3>
+                    <span class="clients-card__subtitle">Pedagang Asongan</span>
+                    <p class="clients-card__desc">
+                      “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“
+                    </p>
+                    <div class="clients-card__rating">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star-off.svg" alt="">
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="clients-slider__item swiper-slide">
+                <article class="clients-card" 
+                  style="background-image: url('img/clients-slider/clients-card-img-2.jpg')"
+                >
+                  <div class="clients-card__text-wrapper">
+                    <div class="clients-card__avatar-wrapper">
+                      <img src="img/clients-slider/clients-avatar-2.jpg" alt="Ibuk Sukijan" class="clients-card__avatar">
+                    </div>
+                    <h3 class="clients-card__title">
+                      Ibuk Sukijan
+                    </h3>
+                    <span class="clients-card__subtitle">Ibu Rumah Tangga</span>
+                    <p class="clients-card__desc">
+                      “Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“
+                    </p>
+                    <div class="clients-card__rating">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star-off.svg" alt="">
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="clients-slider__item swiper-slide">
+                <article class="clients-card" 
+                  style="background-image: url('img/clients-slider/clients-card-img-3.jpg')"
+                >
+                  <div class="clients-card__text-wrapper">
+                    <div class="clients-card__avatar-wrapper">
+                      <img src="img/clients-slider/clients-avatar-3.jpg" alt="Mpok Ina" class="clients-card__avatar">
+                    </div>
+                    <h3 class="clients-card__title">
+                      Mpok Ina
+                    </h3>
+                    <span class="clients-card__subtitle">Karyawan Swasta</span>
+                    <p class="clients-card__desc">
+                     “Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“
+                    </p>
+                    <div class="clients-card__rating">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star-off.svg" alt="">
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="clients-slider__item swiper-slide">
+                <article class="clients-card" 
+                  style="background-image: url('img/clients-slider/clients-card-img-1.jpg')"
+                >
+                  <div class="clients-card__text-wrapper">
+                    <div class="clients-card__avatar-wrapper">
+                      <img src="img/clients-slider/clients-avatar-1.jpg" alt="Bang Upin" class="clients-card__avatar">
+                    </div>
+                    <h3 class="clients-card__title">
+                      Bang Upin
+                    </h3>
+                    <span class="clients-card__subtitle">Pedagang Asongan</span>
+                    <p class="clients-card__desc">
+                      “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“
+                    </p>
+                    <div class="clients-card__rating">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star-off.svg" alt="">
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="clients-slider__item swiper-slide">
+                <article class="clients-card" 
+                  style="background-image: url('img/clients-slider/clients-card-img-2.jpg')"
+                >
+                  <div class="clients-card__text-wrapper">
+                    <div class="clients-card__avatar-wrapper">
+                      <img src="img/clients-slider/clients-avatar-2.jpg" alt="Ibuk Sukijan" class="clients-card__avatar">
+                    </div>
+                    <h3 class="clients-card__title">
+                      Ibuk Sukijan
+                    </h3>
+                    <span class="clients-card__subtitle">Ibu Rumah Tangga</span>
+                    <p class="clients-card__desc">
+                      “Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“
+                    </p>
+                    <div class="clients-card__rating">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star-off.svg" alt="">
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="clients-slider__item swiper-slide">
+                <article class="clients-card" 
+                  style="background-image: url('img/clients-slider/clients-card-img-3.jpg')"
+                >
+                  <div class="clients-card__text-wrapper">
+                    <div class="clients-card__avatar-wrapper">
+                      <img src="img/clients-slider/clients-avatar-3.jpg" alt="Mpok Ina" class="clients-card__avatar">
+                    </div>
+                    <h3 class="clients-card__title">
+                      Mpok Ina
+                    </h3>
+                    <span class="clients-card__subtitle">Karyawan Swasta</span>
+                    <p class="clients-card__desc">
+                     “Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“
+                    </p>
+                    <div class="clients-card__rating">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star.svg" alt="">
+                      <img src="img/icons/star-off.svg" alt="">
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+
+            <button class="clients-slider__btn--prev slider__btn slider__btn--prev">
+              <img src="./img/icons/slider/slider-left.svg" alt="Previous">
+            </button>
+
+            <button class="clients-slider__btn--next slider__btn slider__btn--next">
+              <img src="./img/icons/slider/slider-right.svg" alt="Next">
+            </button>
+          </div>
+        </div>
+      </section> -->
+    </main>
+    <footer class="footer">
+      <div class="container container--small">
+        <!-- footer__grid -->
+        <div class="footer__grid">
+          <!-- Desc -->
+          <div class="footer__desc">
+            <div class="footer__logo">
+              <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="" width="206">
+              </a>
+            </div>
+
+            <p>
+              Contact our consultant for more information.
+            </p>
+          </div>
+          <!-- // Desc -->
+
+          <!-- <nav class="footer__nav footer__nav--services">
+            <h3 class="footer__nav-title">Contact</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#!">Email Marketing</a>
+              </li>
+              <li class="footer__list-item"><a href="#!">Campaigns</a></li>
+              <li class="footer__list-item"><a href="#!">Branding</a></li>
+            </ul>
+          </nav> -->
+
+          <nav class="footer__nav">
+            <h3 class="footer__nav-title">Follow me</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item"><a href="#!">Beds</a></li>
+              <li class="footer__list-item"><a href="#!">Chair</a></li>
+              <li class="footer__list-item"><a href="#!">All</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__nav" id="contacts">
+            <h3 class="footer__nav-title">Contacts</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="social-link" href="mailto:cleanforall5@gmail.com"  target="_blank">
+                  <img src="img/socials/email.svg" alt="">
+                  cleanforall5@gmail.com
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="social-link" href="https://www.facebook.com/cleanforall5"  target="_blank">
+                  <img src="img/socials/fb.svg" alt="">
+                  Facebook
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="social-link" href="https://www.instagram.com/cleanforall?igsh=OWlzOTY0NjB4aXlz&utm_source=qr" target="_blank">
+                  <img src="img/socials/instagram.svg" alt="">
+                  Instagram
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="social-link"  href="https://wa.me/+491741777787" target="_blank">
+                  <img src="img/socials/whatsapp.svg" alt="">
+                  WhatsApp
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="social-link" href="tel:+447477044466"  target="_blank">
+                  <img src="img/socials/phone.svg" alt="">
+                  +447477044466 
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- // footer__grid -->
+        <!-- footer__row -->
+        <!-- <div class="footer__row">
+          <div class="footer__copyright">Copyright © 2023</div>
+
+          <div class="footer__links">
+            <a href="#!">Terms & Conditions</a>
+            <a href="#!">Privacy Policy</a>
+          </div>
+        </div> -->
+        <!-- // footer__row -->
+      </div>
+    </footer>
+
+    <!-- Mobile nav -->
+    <div id="mobile-nav" class="mobile-nav-wrapper">
+      <div class="mobile-nav-header">
+        <button id="close-mobile-nav-btn" class="mobile-nav-btn-close">
+          <img src="./img/icons/close.svg" alt="Close navigation">
+        </button>
+      </div>
+
+      <ul class="mobile-nav">
+        <li class="mobile-nav__item">
+          <a
+            href="#furniture"
+            class="mobile-nav__link mobile-nav__link--dropdown"
+            >Cleaning Services</a
+          >
+          <ul class="mobile-sub-nav">
+            <li class="mobile-sub-nav__item">
+              <a href="upholstery.html" class="mobile-sub-nav__link">Upholstery</a>
+            </li>
+            <li class="mobile-sub-nav__item">
+              <a href="carpet.html" class="mobile-sub-nav__link">Carpet</a>
+            </li>
+            <li class="mobile-sub-nav__item">
+              <a href="mattress.html" class="mobile-sub-nav__link">Mattress</a>
+            </li>
+            <li class="mobile-sub-nav__item">
+              <a href="commercial.html" class="mobile-sub-nav__link">Commercial</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="faq.html" class="mobile-nav__link">FAQ</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="about.html" class="mobile-nav__link">About Us</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#contacts" class="mobile-nav__link">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- // Mobile nav -->
+  </body>
+</html>
