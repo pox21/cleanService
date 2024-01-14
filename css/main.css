@@ -763,6 +763,7 @@ body {
 }
 
 .footer__grid {
+  margin-bottom: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   /* grid-template-columns: 3fr 1fr 2fr 2fr 1fr; */
@@ -800,7 +801,8 @@ body {
 }
 
 .footer__row {
-  padding-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid #ffffff30;
   display: flex;
   justify-content: space-between;
   align-items: center;
